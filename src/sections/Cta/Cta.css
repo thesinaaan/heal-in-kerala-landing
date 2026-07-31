@@ -1,0 +1,123 @@
+/* CTA Section */
+.cta-section {
+  /* Layout */
+  display: flex;
+  justify-content: center;
+
+  /* Box Model */
+  width: 100%;
+
+  /* Visual */
+  background-color: #233c37;
+}
+
+.cta-container {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Box Model */
+  padding: 100px var(--space-24) 80px var(--space-24);
+  text-align: center;
+}
+
+.cta-heading {
+  /* Box Model */
+  max-width: 800px;
+}
+
+.cta-heading .section-heading-title {
+  /* Typography */
+  font-size: 38px !important;
+  font-weight: 500 !important;
+
+  /* Visual */
+  color: #ffffff !important;
+}
+
+.cta-heading .section-heading-title .highlight {
+  /* Visual */
+  color: #7ec142 !important;
+}
+
+.cta-subtitle {
+  /* Box Model */
+  max-width: 660px;
+  margin-top: 16px;
+  margin-bottom: 36px;
+
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  /* Visual */
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Actions Row */
+.cta-actions {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cta-book-btn {
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+
+  /* Visual */
+  color: #1a2e2a !important;
+  background-color: #c8e37e !important;
+  border: none !important;
+  border-radius: 9999px !important;
+
+  /* Effects */
+  transition: all 0.2s ease !important;
+}
+
+.cta-book-btn:hover {
+  /* Visual */
+  background-color: #b5d863 !important;
+}
+
+.cta-whatsapp-btn {
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+
+  /* Visual */
+  color: #ffffff !important;
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 9999px !important;
+
+  /* Effects */
+  transition: all 0.2s ease !important;
+}
+
+.cta-whatsapp-btn:hover {
+  /* Visual */
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+  .cta-actions {
+    /* Layout */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-book-btn,
+  .cta-whatsapp-btn {
+    /* Box Model */
+    width: 100%;
+  }
+}

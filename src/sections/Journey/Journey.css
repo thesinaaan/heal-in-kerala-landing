@@ -1,0 +1,95 @@
+/* Journey Section */
+.journey-section {
+  /* Layout */
+  display: flex;
+  justify-content: center;
+
+  /* Box Model */
+  width: 100%;
+
+  /* Visual */
+  background-color: #f7f9f7;
+}
+
+.journey-container {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Box Model */
+  padding: 96px var(--space-24);
+}
+
+.journey-heading {
+  /* Box Model */
+  margin-bottom: 56px;
+}
+
+/* Stepper Track Wrapper */
+.journey-stepper-wrapper {
+  /* Layout */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  /* Box Model */
+  width: 100%;
+  max-width: 680px;
+}
+
+/* Continuous Vertical Line */
+.journey-line {
+  /* Layout */
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 36px;
+  z-index: 1;
+
+  /* Box Model */
+  width: 1.5px;
+
+  /* Visual */
+  background-color: #e2f0d4;
+}
+
+/* Bottom CTA Action */
+.journey-actions {
+  /* Box Model */
+  margin-top: 56px;
+}
+
+.journey-cta-btn {
+  /* Visual */
+  background-color: #304e48 !important;
+  color: #ffffff !important;
+}
+
+.journey-cta-btn:hover {
+  /* Visual */
+  background-color: #233c37 !important;
+}
+
+@media (max-width: 600px) {
+  .journey-container {
+    /* Box Model */
+    padding: 48px 16px;
+  }
+
+  .journey-heading {
+    /* Box Model */
+    margin-bottom: 36px;
+  }
+
+  .journey-stepper-wrapper {
+    /* Layout */
+    gap: 28px;
+  }
+
+  .journey-line {
+    /* Layout */
+    left: 32px;
+  }
+}

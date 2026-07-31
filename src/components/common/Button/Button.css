@@ -1,0 +1,95 @@
+/* Base Button */
+.ui-button {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+
+  /* Box Model */
+  padding: 14px 28px;
+
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  /* Visual */
+  border-radius: 9999px;
+
+  /* Effects */
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+/* Primary Variant */
+.ui-button.variant-primary {
+  /* Typography */
+  color: var(--btn-primary-text);
+
+  /* Visual */
+  background-color: var(--btn-primary-bg);
+  border: none;
+}
+
+.ui-button.variant-primary:hover {
+  /* Visual */
+  background-color: var(--btn-primary-hover);
+}
+
+/* Secondary Variant */
+.ui-button.variant-secondary {
+  /* Typography */
+  color: var(--text-light);
+
+  /* Visual */
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ui-button.variant-secondary:hover {
+  /* Visual */
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Header Action Variant */
+.ui-button.variant-header {
+  /* Typography */
+  color: #ffffff;
+
+  /* Visual */
+  background-color: #304e48;
+  border: none;
+}
+
+.ui-button.variant-header:hover {
+  /* Visual */
+  background-color: #233c37;
+}
+
+/* Sizes */
+.ui-button.size-sm {
+  /* Box Model */
+  padding: 8px 16px;
+
+  /* Typography */
+  font-size: 13px;
+}
+
+.ui-button.size-md {
+  /* Box Model */
+  padding: 12px 24px;
+
+  /* Typography */
+  font-size: 14px;
+}
+
+.ui-button.size-lg {
+  /* Box Model */
+  padding: 14px 28px;
+
+  /* Typography */
+  font-size: 15px;
+}

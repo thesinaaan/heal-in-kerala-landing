@@ -1,0 +1,146 @@
+/* Journey Step Row */
+.journey-step-card {
+  /* Layout */
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  /* Box Model */
+  width: 100%;
+}
+
+/* Circle Badge */
+.journey-step-circle {
+  /* Layout */
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  /* Box Model */
+  width: 72px;
+  height: 72px;
+
+  /* Visual */
+  background-color: #ffffff;
+  border: 1.5px solid #d8ecb8;
+  border-radius: 50%;
+
+  /* Effects */
+  transition: all 0.25s ease;
+}
+
+.journey-step-card:hover .journey-step-circle {
+  /* Visual */
+  background-color: #f2f9eb;
+  border-color: var(--accent-lime);
+  box-shadow: 0 4px 14px rgba(126, 193, 66, 0.2);
+}
+
+.journey-step-num {
+  /* Typography */
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  /* Visual */
+  color: var(--accent-lime);
+}
+
+.journey-step-badge-label {
+  /* Box Model */
+  margin-top: 1px;
+
+  /* Typography */
+  font-family: 'Poppins', sans-serif;
+  font-size: 9.5px;
+  font-weight: 600;
+
+  /* Visual */
+  color: #304e48;
+}
+
+/* Right Content Box */
+.journey-step-content {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+}
+
+.journey-step-title {
+  /* Box Model */
+  min-width: 130px;
+
+  /* Typography */
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+
+  /* Visual */
+  color: #304e48;
+}
+
+.journey-step-desc {
+  /* Layout */
+  flex: 1;
+
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+
+  /* Visual */
+  color: #737373;
+}
+
+@media (max-width: 600px) {
+  .journey-step-card {
+    /* Layout */
+    gap: 16px;
+  }
+
+  .journey-step-circle {
+    /* Box Model */
+    width: 64px;
+    height: 64px;
+  }
+
+  .journey-step-num {
+    /* Typography */
+    font-size: 13px;
+  }
+
+  .journey-step-badge-label {
+    /* Typography */
+    font-size: 9px;
+  }
+
+  .journey-step-content {
+    /* Layout */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .journey-step-title {
+    /* Box Model */
+    min-width: auto;
+
+    /* Typography */
+    font-size: 15px;
+  }
+
+  .journey-step-desc {
+    /* Typography */
+    font-size: 12px;
+  }
+}

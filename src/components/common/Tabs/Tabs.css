@@ -1,0 +1,51 @@
+/* Tabs Container */
+.ui-tabs-list {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  /* Box Model */
+  margin-bottom: 40px;
+
+  /* Typography */
+  list-style: none;
+}
+
+/* Tab Item Pill */
+.ui-tab-pill {
+  /* Box Model */
+  padding: 10px 24px;
+
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+
+  /* Visual */
+  color: #304e48;
+  background-color: #ffffff;
+  border-radius: 9999px;
+  border: 1px solid rgba(48, 78, 72, 0.1);
+
+  /* Effects */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ui-tab-pill:hover {
+  /* Visual */
+  border-color: var(--accent-lime);
+}
+
+.ui-tab-pill.active {
+  /* Typography */
+  color: #ffffff;
+
+  /* Visual */
+  background-color: var(--accent-lime);
+  border-color: var(--accent-lime);
+  box-shadow: 0 4px 14px rgba(126, 193, 66, 0.35);
+}

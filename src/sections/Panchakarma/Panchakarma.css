@@ -1,0 +1,144 @@
+/* Panchakarma Section */
+.panchakarma-section {
+  /* Layout */
+  display: flex;
+  justify-content: center;
+
+  /* Box Model */
+  width: 100%;
+
+  /* Visual */
+  background-color: #f7f9f7;
+}
+
+.panchakarma-container {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Box Model */
+  padding: 96px var(--space-24);
+}
+
+.panchakarma-heading {
+  /* Box Model */
+  margin-bottom: 32px;
+}
+
+/* Card Showcase Grid (2:1 column ratio matching md:grid-cols-3) */
+.panchakarma-showcase {
+  /* Layout */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: stretch;
+  gap: 24px;
+
+  /* Box Model */
+  width: 100%;
+}
+
+/* Left Content Card */
+.panchakarma-card {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* Box Model */
+  padding: 32px;
+  min-height: 192px;
+
+  /* Visual */
+  background-color: #304e48;
+  border-radius: 16px;
+}
+
+.panchakarma-step {
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  /* Visual */
+  color: var(--accent-lime);
+}
+
+.panchakarma-card-title {
+  /* Box Model */
+  margin-top: 12px;
+  margin-bottom: 16px;
+
+  /* Typography */
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.25;
+
+  /* Visual */
+  color: #ffffff;
+}
+
+.panchakarma-card-desc {
+  /* Box Model */
+  max-width: 520px;
+
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.625;
+
+  /* Visual */
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Right Image */
+.panchakarma-image-wrapper {
+  /* Layout */
+  display: flex;
+  overflow: hidden;
+
+  /* Box Model */
+  width: 100%;
+  height: 100%;
+  min-height: 192px;
+
+  /* Visual */
+  border-radius: 16px;
+}
+
+.panchakarma-img {
+  /* Box Model */
+  width: 100%;
+  height: 100%;
+
+  /* Visual */
+  object-fit: cover;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+  .panchakarma-showcase {
+    /* Layout */
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .panchakarma-card {
+    /* Box Model */
+    padding: 24px;
+  }
+
+  .panchakarma-card-title {
+    /* Typography */
+    font-size: 24px;
+  }
+
+  .panchakarma-image-wrapper {
+    /* Box Model */
+    height: 240px;
+  }
+}

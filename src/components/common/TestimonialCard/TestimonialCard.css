@@ -1,0 +1,227 @@
+/* Testimonial Video Card */
+.testimonial-card {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+
+  /* Box Model */
+  width: 310px;
+  height: 100%;
+
+  /* Visual */
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  overflow: hidden;
+
+  /* Effects */
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.testimonial-card:hover {
+  /* Box Model */
+  transform: translateY(-4px);
+
+  /* Visual */
+  border-color: rgba(126, 193, 66, 0.4);
+}
+
+/* Video Thumbnail Container */
+.testimonial-video-wrapper {
+  /* Layout */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Box Model */
+  width: 100%;
+  height: 180px;
+
+  /* Visual */
+  overflow: hidden;
+}
+
+.testimonial-thumb-img {
+  /* Box Model */
+  width: 100%;
+  height: 100%;
+
+  /* Visual */
+  object-fit: cover;
+
+  /* Effects */
+  transition: transform 0.4s ease;
+}
+
+.testimonial-card:hover .testimonial-thumb-img {
+  /* Box Model */
+  transform: scale(1.04);
+}
+
+/* Dark Overlay */
+.testimonial-video-overlay {
+  /* Layout */
+  position: absolute;
+  inset: 0;
+
+  /* Visual */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+}
+
+/* Play Button Icon */
+.testimonial-play-btn {
+  /* Layout */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+
+  /* Box Model */
+  width: 48px;
+  height: 48px;
+
+  /* Visual */
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+
+  /* Effects */
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.testimonial-play-btn:hover {
+  /* Box Model */
+  transform: translate(-50%, -50%) scale(1.08);
+
+  /* Visual */
+  background-color: var(--accent-lime);
+}
+
+.testimonial-play-btn:hover .play-icon {
+  /* Visual */
+  color: #ffffff;
+}
+
+.play-icon {
+  /* Layout */
+  margin-left: 2px;
+
+  /* Visual */
+  color: #304e48;
+
+  /* Effects */
+  transition: color 0.2s ease;
+}
+
+/* Card Body Content */
+.testimonial-card-body {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  /* Box Model */
+  padding: 20px;
+}
+
+/* Stars Rating */
+.testimonial-rating {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  /* Box Model */
+  margin-bottom: 12px;
+
+  /* Typography */
+  font-size: 14px;
+
+  /* Visual */
+  color: var(--accent-lime);
+}
+
+/* Quote Text */
+.testimonial-quote {
+  /* Layout */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  /* Visual */
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Author Info */
+.testimonial-author {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  /* Box Model */
+  margin-top: auto;
+  padding-top: 16px;
+
+  /* Visual */
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.testimonial-avatar {
+  /* Layout */
+  flex-shrink: 0;
+
+  /* Box Model */
+  width: 42px;
+  height: 42px;
+
+  /* Visual */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1.5px solid var(--accent-lime);
+}
+
+.testimonial-author-info {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-author-name {
+  /* Typography */
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+
+  /* Visual */
+  color: #ffffff;
+}
+
+.testimonial-author-country {
+  /* Box Model */
+  margin-top: 2px;
+
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 400;
+
+  /* Visual */
+  color: rgba(255, 255, 255, 0.65);
+}

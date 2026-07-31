@@ -1,0 +1,56 @@
+/* Section Heading */
+.section-heading-wrapper {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+
+  /* Box Model */
+  width: 100%;
+}
+
+.section-heading-wrapper.align-center {
+  /* Layout */
+  align-items: center;
+
+  /* Typography */
+  text-align: center;
+}
+
+.section-heading-wrapper.align-left {
+  /* Layout */
+  align-items: flex-start;
+
+  /* Typography */
+  text-align: left;
+}
+
+.section-heading-title {
+  /* Typography */
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  /* Visual */
+  color: var(--primary-color);
+}
+
+.section-heading-title .highlight {
+  /* Visual */
+  color: var(--accent-lime);
+}
+
+.section-heading-subtitle {
+  /* Box Model */
+  max-width: 540px;
+
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  /* Visual */
+  color: var(--text-muted);
+}

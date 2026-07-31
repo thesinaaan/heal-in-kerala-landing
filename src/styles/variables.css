@@ -1,11 +1,32 @@
 :root {
-  /* Colors */
-  --primary-color: #1d6f42;
-  --primary-hover: #155231;
-  --text-color: #222222;
-  --text-muted: #666666;
+  /* Typography */
+  --font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-base: 16px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Colors - Header & Base */
+  --primary-color: #304e48;
+  --primary-hover: #233c37;
+  --text-color: #304e48;
+  --text-muted: #737373;
   --bg-color: #ffffff;
-  --border-color: #eeeeee;
+  --border-color: rgba(48, 78, 72, 0.13);
+
+  /* Colors - Hero Theme */
+  --hero-bg: #304e48;
+  --hero-bg-gradient: radial-gradient(circle at 0% 0%, rgba(18, 34, 30, 0.58) 0%, rgba(25, 45, 40, 0.28) 50%, transparent 80%), linear-gradient(135deg, #223a34 0%, #304e48 50%, #385a53 100%);
+  --hero-stats-bg: #233c37;
+  --hero-dot-color: rgba(180, 220, 75, 0.2);
+  --accent-lime: #7ec142;
+  --accent-lime-hover: #72b23a;
+  --btn-primary-bg: #cfe02c;
+  --btn-primary-hover: #bdd022;
+  --btn-primary-text: #304e48;
+  --text-light: #ffffff;
+  --text-light-muted: rgba(255, 255, 255, 0.8);
 
   /* Spacing Scale */
   --space-4: 4px;
@@ -19,12 +40,6 @@
   --space-48: 48px;
   --space-64: 64px;
   --space-80: 80px;
-
-  /* Typography */
-  --font-base: 16px;
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
 
   /* Effects */
   --transition-fast: 0.3s ease;

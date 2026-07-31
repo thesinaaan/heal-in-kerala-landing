@@ -1,0 +1,86 @@
+/* ScrollSlider Swiper Integration */
+.ui-scroll-slider {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+
+  /* Box Model */
+  width: 100%;
+}
+
+.ui-swiper-wrapper-relative {
+  /* Layout */
+  position: relative;
+
+  /* Box Model */
+  width: 100%;
+}
+
+.ui-swiper-container {
+  /* Box Model */
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.ui-swiper-slide {
+  /* Layout */
+  display: flex;
+
+  /* Box Model */
+  width: auto;
+  height: auto;
+}
+
+/* Side Overlay Arrow Buttons for Click Swipe */
+.ui-slider-side-btn {
+  /* Layout */
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+
+  /* Box Model */
+  width: 44px;
+  height: 44px;
+
+  /* Typography */
+  font-size: 16px;
+
+  /* Visual */
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+
+  /* Effects */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ui-slider-side-btn.prev {
+  /* Layout */
+  left: -20px;
+}
+
+.ui-slider-side-btn.next {
+  /* Layout */
+  right: -20px;
+}
+
+.ui-slider-side-btn:hover {
+  /* Visual */
+  background-color: var(--accent-lime);
+  border-color: var(--accent-lime);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(126, 193, 66, 0.4);
+}
+
+@media (max-width: 768px) {
+  .ui-slider-side-btn {
+    display: none;
+  }
+}

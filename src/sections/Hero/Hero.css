@@ -1,0 +1,350 @@
+/* Hero Section */
+.hero {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+
+  /* Box Model */
+  width: 100%;
+
+  /* Visual */
+  background-color: var(--hero-bg);
+  background-image: var(--hero-bg-gradient);
+}
+
+/* Hero Top Container - Fills screen above fold */
+.hero-container {
+  /* Layout */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--space-48);
+
+  /* Box Model */
+  width: 100%;
+  max-width: 1280px;
+  min-height: calc(100vh - 64px);
+  padding: 80px var(--space-24) 60px var(--space-24);
+  margin: 0 auto;
+
+  /* Visual */
+  background-image: radial-gradient(var(--hero-dot-color) 1.2px, transparent 1.2px);
+  background-size: 28px 28px;
+}
+
+/* Content Left Column */
+.hero-content {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-24);
+}
+
+/* Title */
+.hero-title {
+  /* Box Model */
+  margin-bottom: var(--space-24);
+
+  /* Typography */
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+
+  /* Visual */
+  color: var(--text-light);
+}
+
+.hero-title .highlight {
+  /* Typography */
+  color: var(--accent-lime);
+}
+
+/* Description */
+.hero-description {
+  /* Box Model */
+  max-width: 512px;
+  margin-bottom: var(--space-32);
+
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: var(--font-weight-normal);
+  line-height: 1.625;
+
+  /* Visual */
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Features Grid */
+.hero-features {
+  /* Layout */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 24px;
+
+  /* Visual */
+  list-style: none;
+}
+
+.feature-item {
+  /* Layout */
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-8);
+
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 12.5px;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+
+  /* Visual */
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.check-icon {
+  /* Typography */
+  font-weight: var(--font-weight-bold);
+
+  /* Visual */
+  color: var(--accent-lime);
+}
+
+/* Action Buttons */
+.hero-actions {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+
+  /* Box Model */
+  margin-top: 48px;
+}
+
+.cta-btn {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+
+  /* Box Model */
+  padding: 14px 28px;
+
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: var(--font-weight-semibold);
+
+  /* Visual */
+  border-radius: 9999px;
+
+  /* Effects */
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.cta-btn.primary {
+  /* Typography */
+  color: var(--btn-primary-text);
+
+  /* Visual */
+  background-color: var(--btn-primary-bg);
+  border: none;
+}
+
+.cta-btn.primary:hover {
+  /* Visual */
+  background-color: var(--btn-primary-hover);
+}
+
+.cta-btn.secondary {
+  /* Typography */
+  color: var(--text-light);
+
+  /* Visual */
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cta-btn.secondary:hover {
+  /* Visual */
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.arrow {
+  /* Typography */
+  font-size: 16px;
+
+  /* Effects */
+  transition: transform var(--transition-fast);
+}
+
+.cta-btn.primary:hover .arrow {
+  /* Effects */
+  transform: translateX(4px);
+}
+
+.wa-icon {
+  /* Typography */
+  font-size: 16px;
+}
+
+/* Hero Right Image */
+.hero-image-wrapper {
+  /* Layout */
+  display: flex;
+  justify-content: center;
+
+  /* Box Model */
+  width: 100%;
+}
+
+.hero-img {
+  /* Box Model */
+  width: 100%;
+  max-width: 560px;
+  height: 436px;
+
+  /* Visual */
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Hero Stats Band - Visible on next scroll */
+.hero-stats-band {
+  /* Layout */
+  display: flex;
+  align-items: center;
+
+  /* Box Model */
+  width: 100%;
+  height: 107px;
+
+  /* Visual */
+  background-color: var(--hero-stats-bg);
+  background-image: linear-gradient(to right, #152922 0%, #1f382f 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero-stats-container {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Box Model */
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  padding: 0 var(--space-24);
+  margin: 0 auto;
+}
+
+.stat-item {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Box Model */
+  text-align: center;
+}
+
+.stat-value {
+  /* Typography */
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.1;
+
+  /* Visual */
+  color: var(--accent-lime);
+}
+
+.stat-label {
+  /* Box Model */
+  margin-top: 4px;
+
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: var(--font-weight-normal);
+
+  /* Visual */
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+  .hero-container {
+    /* Layout */
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    /* Box Model */
+    min-height: auto;
+    padding: 36px 20px;
+  }
+
+  .hero-title {
+    /* Typography */
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .hero-description {
+    /* Typography */
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .hero-features {
+    /* Layout */
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .hero-image-wrapper {
+    /* Layout */
+    display: none;
+  }
+
+  .hero-actions {
+    /* Layout */
+    flex-direction: column;
+    align-items: stretch;
+
+    /* Box Model */
+    margin-top: 24px;
+  }
+
+  .hero-stats-band {
+    /* Box Model */
+    height: auto;
+  }
+
+  .hero-stats-container {
+    /* Layout */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
+
+    /* Box Model */
+    padding: 28px 20px;
+  }
+
+  .stat-value {
+    /* Typography */
+    font-size: 26px;
+  }
+
+  .stat-label {
+    /* Typography */
+    font-size: 12px;
+  }
+}

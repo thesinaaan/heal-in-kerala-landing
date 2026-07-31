@@ -1,0 +1,37 @@
+/* Testimonials Section */
+.testimonials-section {
+  /* Layout */
+  display: flex;
+  justify-content: center;
+
+  /* Box Model */
+  width: 100%;
+
+  /* Visual */
+  background-color: #304e48;
+}
+
+.testimonials-container {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+
+  /* Box Model */
+  padding: 96px var(--space-24);
+}
+
+.testimonials-heading {
+  /* Box Model */
+  margin-bottom: 48px;
+}
+
+/* White Title Overrides for Dark Background */
+.testimonials-section .section-heading-title {
+  /* Visual */
+  color: #ffffff !important;
+}
+
+.testimonials-section .section-heading-title .highlight {
+  /* Visual */
+  color: var(--accent-lime) !important;
+}

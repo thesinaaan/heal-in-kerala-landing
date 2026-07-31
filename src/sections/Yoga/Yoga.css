@@ -1,0 +1,163 @@
+/* Yoga Section */
+.yoga-section {
+  /* Layout */
+  display: flex;
+  justify-content: center;
+
+  /* Box Model */
+  width: 100%;
+
+  /* Visual */
+  background-color: #ffffff;
+}
+
+.yoga-container {
+  /* Layout */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+
+  /* Box Model */
+  padding: 96px var(--space-24);
+}
+
+/* Left Content Column */
+.yoga-content-column {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.yoga-heading {
+  /* Box Model */
+  margin-bottom: 8px;
+}
+
+.yoga-description {
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+
+  /* Visual */
+  color: #55625b;
+}
+
+.yoga-description-sm {
+  /* Typography */
+  font-size: 14px;
+}
+
+/* Features Grid */
+.yoga-features-grid {
+  /* Layout */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 20px;
+
+  /* Box Model */
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.yoga-feature-item {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.yoga-dot {
+  /* Layout */
+  flex-shrink: 0;
+
+  /* Box Model */
+  width: 7px;
+  height: 7px;
+
+  /* Visual */
+  background-color: var(--accent-lime);
+  border-radius: 50%;
+}
+
+.yoga-feature-text {
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+
+  /* Visual */
+  color: #304e48;
+}
+
+/* Link Action */
+.yoga-link {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  /* Typography */
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: underline;
+
+  /* Visual */
+  color: #304e48;
+
+  /* Effects */
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.yoga-link:hover {
+  /* Layout */
+  gap: 12px;
+
+  /* Visual */
+  color: var(--accent-lime);
+}
+
+/* Right Image Column */
+.yoga-image-column {
+  /* Layout */
+  display: flex;
+  justify-content: center;
+
+  /* Box Model */
+  width: 100%;
+}
+
+.yoga-img {
+  /* Box Model */
+  width: 100%;
+  max-width: 560px;
+  height: 720px;
+
+  /* Visual */
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+  .yoga-container {
+    /* Layout */
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .yoga-img {
+    /* Box Model */
+    height: 360px;
+  }
+
+  .yoga-features-grid {
+    /* Layout */
+    grid-template-columns: 1fr;
+  }
+}
