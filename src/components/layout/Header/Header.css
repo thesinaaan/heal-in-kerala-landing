@@ -75,6 +75,7 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.2;
+  white-space: nowrap;
 
   /* Visual */
   color: #253f3b;
@@ -87,6 +88,7 @@
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  white-space: nowrap;
 
   /* Visual */
   color: #66776c;
@@ -187,29 +189,68 @@
   cursor: pointer;
 }
 
+/* Mobile Responsiveness (Matching Exact Target Screenshot) */
 @media (max-width: 1024px) {
-  .header-actions .call-btn,
-  .header-actions .button {
-    /* Layout */
-    display: none;
+  .header {
+    /* Box Model */
+    padding: 0 16px;
   }
 
+  .header .container {
+    /* Box Model */
+    padding: 0;
+  }
+
+  /* Hide desktop action buttons in top bar on mobile */
+  .call-btn,
+  .desktop-header-cta {
+    /* Layout */
+    display: none !important;
+  }
+
+  .header-actions {
+    /* Layout */
+    gap: 0;
+  }
+
+  /* Simple clean toggle button */
+  .mobile-menu-btn {
+    /* Layout */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    /* Box Model */
+    padding: 6px;
+
+    /* Visual */
+    background: transparent;
+    border: none;
+    color: #253f3b;
+
+    /* Effects */
+    cursor: pointer;
+  }
+
+  /* Dropdown Drawer Menu */
   .nav {
     /* Layout */
     position: absolute;
     top: 64px;
     left: 0;
+    z-index: 999;
     display: none;
     flex-direction: column;
 
     /* Box Model */
     width: 100%;
-    padding: 20px;
+    padding: 16px 24px 24px 24px;
 
     /* Visual */
     background-color: #ffffff;
-    border-bottom: 1px solid #eeeeee;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   }
 
   .nav.open {
@@ -220,17 +261,80 @@
   .nav-list {
     /* Layout */
     flex-direction: column;
-    gap: 16px;
+    gap: 0;
 
     /* Box Model */
     width: 100%;
 
     /* Typography */
-    text-align: center;
+    text-align: left;
   }
 
-  .mobile-menu-btn {
+  .nav-list li {
+    /* Box Model */
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .nav-list li:last-child {
+    /* Visual */
+    border-bottom: none;
+  }
+
+  .nav-list a {
+    /* Layout */
+    display: block;
+
+    /* Box Model */
+    padding: 12px 4px;
+
+    /* Typography */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    /* Visual */
+    color: #737373;
+    text-decoration: none;
+
+    /* Effects */
+    transition: color 0.2s ease;
+  }
+
+  .nav-list a:hover {
+    /* Visual */
+    color: #253f3b;
+  }
+
+  .mobile-nav-cta {
     /* Layout */
     display: flex;
+    justify-content: center;
+
+    /* Box Model */
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .mobile-nav-cta .ui-button {
+    /* Layout */
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+
+    /* Box Model */
+    width: 100%;
+    padding: 13px 20px;
+
+    /* Typography */
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.5px;
+    font-weight: 600;
+
+    /* Visual */
+    background-color: #253f3b !important;
+    color: #ffffff !important;
+    border-radius: 9999px !important;
+    box-shadow: 0 4px 12px rgba(37, 63, 59, 0.2);
   }
 }

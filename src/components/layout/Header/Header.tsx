@@ -36,21 +36,24 @@ export default function Header() {
               </li>
             ))}
           </ul>
+          <div className="mobile-nav-cta">
+            <Button variant="header" size="md" onClick={() => setMobileMenuOpen(false)}>Book Consultation</Button>
+          </div>
         </nav>
 
         <div className="header-actions">
           <a href="tel:+" className="call-btn">
             <Phone size={14} className="phone-icon" /> Call Us
           </a>
-          <Button variant="header" size="md">Book Consultation</Button>
+          <Button variant="header" size="md" className="desktop-header-cta">Book Consultation</Button>
 
           <button
             type="button"
-            className="mobile-menu-btn"
+            className={`mobile-menu-btn ${mobileMenuOpen ? 'is-active' : ''}`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            {mobileMenuOpen ? <X size={18} /> : <Menu size={20} />}
           </button>
         </div>
       </Container>
