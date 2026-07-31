@@ -131,6 +131,11 @@
   color: #253f3b;
 }
 
+.mobile-nav-cta {
+  /* Layout */
+  display: none;
+}
+
 /* Actions */
 .header-actions {
   /* Layout */
