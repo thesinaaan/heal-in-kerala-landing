@@ -1,0 +1,31 @@
+:root {
+  /* Colors */
+  --primary-color: #1d6f42;
+  --primary-hover: #155231;
+  --text-color: #222222;
+  --text-muted: #666666;
+  --bg-color: #ffffff;
+  --border-color: #eeeeee;
+
+  /* Spacing Scale */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+
+  /* Typography */
+  --font-base: 16px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Effects */
+  --transition-fast: 0.3s ease;
+}
